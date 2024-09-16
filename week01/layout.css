@@ -1,0 +1,65 @@
+.parent {
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+Header {
+  padding: 2rem;
+  grid-column: 1 / 4;
+  background-color: rgb(46, 45, 45);
+  font-size: 20px;
+  color: white;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.nav ul {
+  background-color: black;
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
+}
+
+.nav li {
+  float: inline-start;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+  width: 150px;
+  background-color: black;
+  display: inline-flex;
+}
+
+.nav li a:hover {
+  background-color: rgb(86, 85, 85);
+}
+
+.Main-Content {
+  grid-column: 1 / 3;
+  background-color: rgb(167, 167, 167);
+  padding: 150px;
+}
+
+.Aside-Content {
+  grid-column: 3 / 4;
+  padding: 150px;
+}
+
+Footer {
+  padding: 4rem;
+  grid-column: 1 / 4;
+  background-color: rgb(46, 45, 45);
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
