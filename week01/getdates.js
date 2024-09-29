@@ -1,4 +1,4 @@
-//Obtain the element of the footer ID
+//Obtain the element of the footer ID.
 const lastModified = document.getElementById("lastModified");
 
 //Obtain the current Date
