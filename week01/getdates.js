@@ -7,7 +7,7 @@ const currentDate = new Date();
 //Format the date as "dd/mm/yyyy"
 const formattedDate = `${currentDate.getDate()}/${
   currentDate.getMonth() + 1
-}/${currentDate.getFullYear()}`;
+}/${currentDate.getFullYear()}${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}`;
 
 //Update the content of the element with the formatted date
 lastModified.textContent = `Last Modified: ${formattedDate}`;
