@@ -1,0 +1,9 @@
+@media (min-width: 640px) {
+  body {
+    font-size: 18px;
+  }
+  .pic {
+    display: flex;
+    flex: 1 1 100%;
+  }
+}
