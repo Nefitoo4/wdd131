@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Country Page Asignment - Nefi Zaldana - WDD 131 Dynamic Web Fundamentals"
+    />
+    <meta name="author" content="Nefi Alberto Zaldana" />
+    <link rel="stylesheet" href="styles/place.css" />
+    <link rel="stylesheet" href="styles/place-large.css" />
+    <script src="scripts/place.js" defer></script>
+    <title>Country Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Italy</h1>
+    </header>
+    <main>
+      <!--Image source with srcset and webp format-->
+      <div class="hero">
+        <picture>
+          <source
+            srcset="images/Italy-large.webp"
+            media="(min-width: 1000px)"
+          />
+          <source
+            srcset="images/Italy-medium.webp"
+            media="(min-width: 500px)"
+          />
+          <img
+            src="images/Italy-small.webp"
+            alt="Ilustrative reference of florence italy"
+            width="440"
+            height="640"
+            class="image-border"
+          />
+        </picture>
+        <aside class="data-parent">
+          <h2>Data</h2>
+          <div>
+            <div class="data-child">
+              <label>Area:</label>
+              <span>301,340 km<sup>2</sup></span>
+            </div>
+            <div class="data-child">
+              <label>Population:</label>
+              <span>58.94 millions</span>
+            </div>
+            <div class="data-child">
+              <label>Capital:</label>
+              <span>Rome</span>
+            </div>
+            <div class="data-child">
+              <label>Languages:</label>
+              <span>Italian, Veneto, Sicilian</span>
+            </div>
+            <div class="data-child">
+              <label>Currency:</label>
+              <span>Euro</span>
+            </div>
+            <div class="data-child">
+              <label>Time Zone:</label>
+              <span>UTC+02:00</span>
+            </div>
+            <div class="data-child">
+              <label>Calling Code:</label>
+              <span>+39</span>
+            </div>
+            <div class="data-child">
+              <label>Internet TLD:</label>
+              <span>.it</span>
+            </div>
+          </div>
+        </aside>
+        <aside class="weather-parent">
+          <h2 class="weather-icon">Weather</h2>
+          <div>
+            <div class="weather-child">
+              <label>Temperature:</label>
+              <span>19 °C</span>
+            </div>
+            <div class="weather-child">
+              <label>Condition:</label>
+              <span>Partly Cloudy</span>
+            </div>
+            <div class="weather-child">
+              <label>Wind:</label>
+              <span>18 km/h</span>
+            </div>
+            <div class="weather-child">
+              <label>Wind Chill:</label>
+              <span id="windChill">3.65</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer>
+      <!--Footer Box-->
+      <span>
+        &copy; 2024 &#x2600; Nefi Alberto Zaldana &#x2600; El Salvador</span
+      >
+      <p id="lastModified">Last Modification:</p>
+    </footer>
+  </body>
+</html>
