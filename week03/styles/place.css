@@ -1,61 +1,86 @@
-* {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
+:root {
+  --primary-color: green;
+  --secondary-color: red;
 }
 
-header {
-  background-color: green;
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  border-bottom: 5px solid var(--primary-color);
+}
+
+h1 {
+  background-color: var(--primary-color);
+  border-bottom: 15px solid var(--secondary-color);
+  text-align: center;
   padding: 1rem;
   color: white;
-  text-align: center;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
 }
 
-.pic {
-  display: flex;
+.data-parent {
+  display: grid;
   justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+  background-color: #bbbbbb9f;
+  margin-top: -0.3rem;
 }
 
-.image-border {
-  border: 6px solid green;
-}
-
-.data {
+.data-parent h2 {
   text-align: center;
-  padding: 1rem;
 }
 
-.weather {
+.data-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 0.5rem;
+  padding: 0rem 1rem;
+}
+
+.weather-parent {
+  display: grid;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  background-color: #bbbbbb9f;
+  border-top: 2px solid rgba(167, 167, 151, 0.219);
+}
+
+.weather-parent h2 {
   text-align: center;
-  padding: 1rem;
-  border-top: 1px dotted rgb(223, 168, 168);
-  align-items: center;
 }
 
-/*weather icon pseudo-element application*/
 .weather-icon::after {
-  content: "\26C5";
-  font-size: 2em;
-  margin-top: 10px;
+  content: url("../images/weather-icon.svg");
+  display: block;
+  width: 60px;
+  margin: 10px auto 0;
 }
 
-@media (min-width: 1024px) {
-  .weather-icon::after {
-    display: block;
-  }
+.weather-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 0.5rem;
+  padding: 0rem 1rem;
 }
 
-@media (max-width: 1023px) {
-  .weather-icon::after {
-    display: none;
-  }
+label {
+  min-width: 120px;
+  text-align: right;
+  padding-right: 10px;
 }
 
-/*The footer should not have white bottom*/
+span {
+  text-align: left;
+}
+
 footer {
-  background-color: red;
+  background-color: var(--secondary-color);
   padding: 1rem;
   text-align: center;
   color: white;
