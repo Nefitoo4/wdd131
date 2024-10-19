@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="pictures album of temples" />
+    <meta name="author" content="Nefi Zaldana" />
+    <link rel="stylesheet" href="week04/styles/filtered-temples.css" />
+    <link rel="stylesheet" href="week04/styles/filtered-temples-large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="week04/scripts/filtered-temples.js" defer></script>
+    <title>Album of LDS Temples</title>
+  </head>
+  <body>
+    <header>
+      <h1>Temple Album</h1>
+      <a id="hamburgerMenu" href="#"></a>
+      <nav>
+        <ul class="navigation">
+          <li>
+            <a href="#" id="home-temple" onclick="UpdateTitle ('Home')">Home</a>
+          </li>
+          <li>
+            <a href="#" id="old-temple" onclick="UpdateTitle ('Old Temples')"
+              >Old</a
+            >
+          </li>
+          <li>
+            <a href="#" id="new-temple" onclick="UpdateTitle ('New Temples')"
+              >New</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              id="large-temple"
+              onclick="UpdateTitle ('Large Temples')"
+              >Large</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              id="small-temple"
+              onclick="UpdateTitle ('Small Temples')"
+              >Small</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 id="Title">The most beautiful LDS Temples</h2>
+      <div class="container-title">
+        <div class="temple-card">
+          <h3>Aba Nigeria</h3>
+          <p><strong>Location:</strong> Aba Nigeria</p>
+          <p><strong>Dedicated:</strong> 2005, August, 7</p>
+          <p><strong>Area:</strong> 11500 sq ft</p>
+          <img
+            src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+            alt="Aba Nigeria Temple"
+            loading="lazy"
+            width="325"
+            height="275"
+          />
+        </div>
+        <div class="temple-card">
+          <h3>Manti Utah</h3>
+          <p><strong>Location:</strong> Manti, Utah, United States</p>
+          <p><strong>Dedicated:</strong> 1888, May, 21</p>
+          <p><strong>Area:</strong> 74792 sq ft</p>
+          <img
+            src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+            alt="Manti Utah Temple"
+            loading="lazy"
+            width="325"
+            height="275"
+          />
+        </div>
+        <div class="temple-card">
+          <h3>Payson Utah</h3>
+          <p><strong>Location:</strong> Payson, Utah, United States</p>
+          <p><strong>Dedicated:</strong> 2015, June, 7</p>
+          <p><strong>Area:</strong> 96630 sq ft</p>
+          <img
+            src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+            alt="Payson Utah Temple"
+            loading="lazy"
+            width="325"
+            height="275"
+          />
+        </div>
+        <div class="temple-card">
+          <h3>Yigo Guam</h3>
+          <p><strong>Location:</strong> Yigo Guam</p>
+          <p><strong>Dedicated:</strong> 2020, May, 2</p>
+          <p><strong>Area:</strong> 6861 sq ft</p>
+          <img
+            src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+            alt="Yigo Guam Temple"
+            loading="lazy"
+            width="325"
+            height="275"
+          />
+        </div>
+        <div class="temple-card">
+          <h3>Washington D.C.</h3>
+          <p><strong>Location:</strong> Kensington, Maryland, United States</p>
+          <p><strong>Dedicated:</strong> 1974, November, 19</p>
+          <p><strong>Area:</strong> 156558 sq ft</p>
+          <img
+            src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+            alt="Washington D.C Temple"
+            loading="lazy"
+            width="325"
+            height="275"
+          />
+        </div>
+        <div class="temple-card">
+          <h3>Lima Perú</h3>
+          <p><strong>Location:</strong> Lima, Perú</p>
+          <p><strong>Dedicated:</strong> 1986, January, 10</p>
+          <p><strong>Area:</strong> 9600 sq ft</p>
+          <img
+            src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+            alt="Lima Peru Temple"
+            loading="lazy"
+            width="325"
+            height="275"
+          />
+        </div>
+        <div class="temple-card">
+          <h3>Mexico City Mexico</h3>
+          <p><strong>Location:</strong> Mexico City, Mexico</p>
+          <p><strong>Dedicated:</strong> 1983, December, 2</p>
+          <p><strong>Area:</strong> 116642 sq ft</p>
+          <img
+            src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+            alt="Mexico City Temple"
+            loading="lazy"
+            width="325"
+            height="275"
+          />
+        </div>
+        <div class="temple-card">
+          <h3>San Salvador El Salvador</h3>
+          <p><strong>Location:</strong> San Salvador, El Salvador</p>
+          <p><strong>Dedicated:</strong> 2011, August, 21</p>
+          <p>
+            <strong>Area:</strong> 21986 sq ft/p>
+            <img
+              src="https://churchofjesuschristtemples.org/assets/img/temples/san-salvador-el-salvador-temple/san-salvador-el-salvador-temple-7314.jpg"
+              alt="San Salvador Temple"
+              loading="lazy"
+              width="325"
+              height="275"
+            />
+          </p>
+        </div>
+
+        <div class="temple-card">
+          <h3>Tegucigalpa Honduras Temple</h3>
+          <p><strong>Location:</strong> Tegucigalpa, Honduras</p>
+          <p><strong>Dedicated:</strong> 2013, March, 17</p>
+          <p><strong>Area:</strong> 28254 sq ft</p>
+          <img
+            src="https://churchofjesuschristtemples.org/assets/img/temples/tegucigalpa-honduras-temple/tegucigalpa-honduras-temple-3878.jpg"
+            alt="Tegucigalpa Temple"
+            loading="lazy"
+            width="325"
+            height="275"
+          />
+        </div>
+        <div class="temple-card">
+          <h3>Guatemala city Guatemala</h3>
+          <p><strong>Location:</strong> Guatemala city, Guatemala</p>
+          <p><strong>Dedicated:</strong> 1984, December, 14</p>
+          <p><strong>Area:</strong> 11610 sq ft</p>
+          <img
+            src="https://churchofjesuschristtemples.org/assets/img/temples/guatemala-city-guatemala-temple/guatemala-city-guatemala-temple-6407.jpg"
+            alt="Guatemala City Temple"
+            loading="lazy"
+            width="325"
+            height="275"
+          />
+        </div>
+        <div class="temple-card">
+          <h3>Santiago Chile</h3>
+          <p><strong>Location:</strong> Santiago, Chile</p>
+          <p><strong>Dedicated:</strong> 1983, September, 15</p>
+          <p><strong>Area:</strong> 20831 sq ft</p>
+          <img
+            src="https://churchofjesuschristtemples.org/assets/img/temples/santiago-chile-temple/santiago-chile-temple-45812.jpg"
+            alt="Santiago Chile Temple"
+            loading="lazy"
+            width="325"
+            height="275"
+          />
+        </div>
+        <div class="temple-card">
+          <h3>Quetzaltenango Guatemala</h3>
+          <p><strong>Location:</strong> Quetzaltenango, Guatemala</p>
+          <p><strong>Dedicated:</strong> 2011, December, 11</p>
+          <p><strong>Area:</strong> 21085 sq ft</p>
+          <img
+            src="https://churchofjesuschristtemples.org/assets/img/temples/quetzaltenango-guatemala-temple/quetzaltenango-guatemala-temple-3957.jpg"
+            alt="Quetzaltenango Temple"
+            loading="lazy"
+            width="325"
+            height="275"
+          />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 &star; Nefi Alberto Zaldana &star; El Salvador</p>
+      <p id="lastModified">Last Modification:</p>
+    </footer>
+  </body>
+</html>

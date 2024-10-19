@@ -1,0 +1,161 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+}
+
+header {
+  display: flex;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: blueviolet;
+  padding: 1rem;
+  color: white;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#hamburgerMenu {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  background-color: #eee;
+  color: #000;
+}
+
+#hamburgerMenu::before {
+  content: "≡";
+}
+
+nav {
+  max-width: 800px;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  float: inline-start;
+  list-style-type: none;
+  list-style: none;
+  padding: 0;
+}
+
+.navigation li {
+  display: none;
+}
+
+nav li a:hover {
+  background-color: purple;
+  text-decoration: underline;
+  padding: 1rem;
+}
+
+.navigation a:hover,
+.navigation a:active {
+  color: white;
+  background-color: purple;
+}
+
+.show li {
+  display: block;
+}
+
+#hamburgerMenu.show::before {
+  content: "X";
+}
+
+@media only screen and (min-width: 40em) {
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block; /*change the state in small view*/
+    flex: 1 1 100%;
+  }
+  .navigation a {
+    text-align: center;
+  }
+
+  #hamburgerMenu {
+    display: none;
+  }
+}
+
+main {
+  margin: 0 auto;
+}
+
+.container-title {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 25px;
+  place-items: center;
+}
+
+.temple-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 20px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.temple-card h2 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.temple-card p {
+  color: #666;
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.temple-card img {
+  border-radius: 5px;
+  max-width: 100%;
+  width: 325px;
+  height: 275px;
+  border: 2px solid #ddd;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: blueviolet;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
