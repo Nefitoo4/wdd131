@@ -48,6 +48,7 @@ nav {
   max-width: 760px;
 }
 
+/*just styling the nav a as the main part of the menu*/
 nav a {
   display: block;
   text-decoration: none;

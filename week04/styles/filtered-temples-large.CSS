@@ -1,4 +1,5 @@
 @media (min-width: 640px) {
+  /*not necessarily style all the page, just the main part we want to fit with the using of media*/
   nav ul {
     display: flex;
   }
