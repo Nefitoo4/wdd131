@@ -98,6 +98,7 @@
   }
 }
 
+/*-----Styles for for small screens for hamburger menu-----*/
 @media only screen and (min-width: 40em) {
   .nav {
     display: flex;

@@ -73,24 +73,6 @@ figcaption {
   position: relative;
 }
 
-#hamburger {
-  display: none;
-  background-color: none;
-  font-size: 2rem;
-  font-weight: 700;
-  text-decoration: none;
-  padding: 0.5rem 0.75rem;
-  color: #fff;
-}
-
-#hamburger::before {
-  content: "≡";
-}
-
-#hamburger.show::before {
-  content: "X";
-}
-
 .navbar nav {
   display: flex;
   justify-content: right;
@@ -111,6 +93,25 @@ nav a {
 .nav a:hover {
   background-color: var(--Text-color);
   color: #000;
+}
+
+/*----HAMBURGER MENU----*/
+#hamburger {
+  display: none;
+  background-color: none;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  color: #fff;
+}
+
+#hamburger::before {
+  content: "≡";
+}
+
+#hamburger.show::before {
+  content: "X";
 }
 
 /*----FLEX IMAGE SECTION----*/
