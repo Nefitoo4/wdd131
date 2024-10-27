@@ -1,5 +1,5 @@
 {
-  "html.format.extraLiners": "head, body, /html",
   "html.format.endWithNewline": true,
+  "html.format.extraLiners": "head, body, /html",
   "html.format.templateSettings.customFormatterSettings.allowSelfClosingTags": false
 }
