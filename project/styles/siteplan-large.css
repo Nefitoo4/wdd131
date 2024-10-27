@@ -28,7 +28,7 @@
   #contact-us,
   #social-media-links {
     flex: 1 1 100%;
-    max-width: 100%;
+    max-width: 100%; /*expanded to 100%*/
     align-items: flex-start;
   }
 }

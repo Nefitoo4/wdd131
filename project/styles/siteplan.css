@@ -98,7 +98,7 @@ nav a {
 
 /*----HAMBURGER MENU----*/
 #hamburger {
-  display: none;
+  display: none; /*no background necessary*/
   font-size: 2rem;
   font-weight: 700;
   text-decoration: none;
