@@ -1,5 +1,5 @@
 /*////////////////////////////////////////PAGE STYLES///////////////////////////////////////////////*/
-/*-----Styles for smaller screens-----*/
+/*------Styles for smaller screens------*/
 @media screen and (max-width: 639px) {
   .navbar nav {
     flex-direction: column;
