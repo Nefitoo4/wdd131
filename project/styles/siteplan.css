@@ -15,7 +15,7 @@
 body {
   background-color: var(--Background-color);
   color: var(--Text-color);
-  font-family: "Roboto", sans-serif; /*primary-font family*/
+  font-family: 'Roboto', sans-serif; /*primary-font family*/
   margin: 0;
   padding: 0;
 }
@@ -30,13 +30,13 @@ header {
 h1,
 h2 {
   color: var(--secondary-color);
-  font-family: "Lato", sans-serif; /*secondary-font family*/
+  font-family: 'Lato', sans-serif; /*secondary-font family*/
   text-align: center;
 }
 
 h3 {
   color: var(--secondary-color);
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   text-align: center;
 }
 
@@ -99,7 +99,6 @@ nav a {
 /*----HAMBURGER MENU----*/
 #hamburger {
   display: none;
-  background-color: none;
   font-size: 2rem;
   font-weight: 700;
   text-decoration: none;
@@ -108,11 +107,11 @@ nav a {
 }
 
 #hamburger::before {
-  content: "≡";
+  content: '≡';
 }
 
 #hamburger.show::before {
-  content: "X";
+  content: 'X';
 }
 
 /*----FLEX IMAGE SECTION----*/
