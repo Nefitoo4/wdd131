@@ -27,7 +27,7 @@ window.onload = function () {
   const productSelect = document.getElementById("productName");
 
   products.forEach((product) => {
-    const option = document.createElement("product");
+    const option = document.createElement("option");
     option.value = product.id; //use the id as the value
     option.textContent = product.name; //display the name
     productSelect.appendChild(option);
@@ -43,13 +43,12 @@ document
 
     //increment the review counter
     let reviewCount = localStorage.getItem("reviewCount") || 0;
+    console.log("Review Count after increment: ", reviewCount);
+
     reviewCount++;
     localStorage.setItem("reviewCount", reviewCount);
+    console.log("Review Count after increment: ", reviewCount);
 
     //redirect to the confirmation page
-    window.lacation.href = this.action;
+    window.location.href = this.action;
   });
-
-//data storage for counter page
-document.getElementById("reviewCount").textContent =
-  localStorage.getItem("reviewCount") || 0;
