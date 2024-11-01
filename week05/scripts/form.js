@@ -50,5 +50,5 @@ document
     console.log("Review Count after increment: ", reviewCount);
 
     //redirect to the confirmation page
-    window.location.href = this.action;
+    window.location.href = "/week05/review.html";
   });

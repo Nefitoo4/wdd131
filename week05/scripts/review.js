@@ -1,4 +1,4 @@
-if (window.location.pathname.includes("review.html")) {
+if (window.location.pathname.includes("/week05/review.html")) {
   document.getElementById("reviewCount").textContent =
     localStorage.getItem("reviewCount") || 0;
 }
