@@ -33,6 +33,34 @@
   }
 }
 
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 10px;
+  flex: 1 1 45%;
+}
+
+.button:hover {
+  background-color: var(--Text-color);
+  color: #000;
+}
+
+.container {
+  text-align: center;
+}
+
+.wireframe-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
 /*-----Styles for medium screens-----*/
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   .navbar nav {
