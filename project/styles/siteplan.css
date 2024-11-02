@@ -50,6 +50,7 @@ h3 {
   color: var(--secondary-color);
   font-family: "Lato", sans-serif;
   text-align: center;
+  margin-top: 0;
 }
 
 picture,
@@ -240,6 +241,34 @@ button {
 button:hover {
   background-color: var(--Text-color);
   color: #000;
+}
+/*----WIREFRAME BUTTON----*/
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 10px;
+  flex: 1 1 45%;
+}
+
+.button:hover {
+  background-color: var(--Text-color);
+  color: #000;
+}
+
+.container {
+  text-align: center;
+}
+
+.wireframe-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 /*----CONTACTS SECTION----*/
