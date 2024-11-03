@@ -31,34 +31,34 @@
     max-width: 100%; /*expanded to 100%*/
     align-items: flex-start;
   }
-}
 
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #000;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 16px;
-  margin: 10px;
-  flex: 1 1 45%;
-}
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+    flex: 1 1 45%;
+  }
 
-.button:hover {
-  background-color: var(--Text-color);
-  color: #000;
-}
+  .button:hover {
+    background-color: var(--Text-color);
+    color: #000;
+  }
 
-.container {
-  text-align: center;
-}
+  .container {
+    text-align: center;
+  }
 
-.wireframe-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+  .wireframe-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
 }
 
 /*-----Styles for medium screens-----*/
@@ -128,23 +128,51 @@
 }
 
 /*-----Styles for for small screens for hamburger menu-----*/
-@media only screen and (min-width: 40em) {
+@media only screen and (max-width: 768px) {
   .nav {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
   }
 
   .nav a {
-    border-top: 1px solid var(--secondary-color);
     width: 100%;
+    padding: 10px 20px;
   }
 
-  .nav.show {
+  .nav.active {
     display: flex;
   }
 
-  #hamburger {
+  #hamburgerMenu {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #menu.show {
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navigation li {
+    display: block;
+  }
+
+  #hamburgerMenu {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+  }
+
+  #hamburgerMenu {
     display: none;
   }
 }

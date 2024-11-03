@@ -100,8 +100,9 @@ figcaption {
 
 .navbar nav {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav-logo {
@@ -111,8 +112,12 @@ figcaption {
 
 nav a {
   color: #fff;
-  padding: 20px 25px;
+  padding: 2rem;
   text-decoration: none;
+  text-align: center;
+  display: flex;
+  text-align: center;
+  font-weight: 400;
 }
 
 .nav a:hover {
@@ -120,21 +125,52 @@ nav a {
   color: #000;
 }
 
-/*-----HAMBURGER MENU------*/
-#hamburger {
-  display: none; /*no background necessary*/
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  float: inline-start;
+  list-style-type: none;
+}
+
+.navigation li {
+  display: flex;
+}
+
+nav li a:hover {
+  background-color: var(--secondary-color);
+}
+
+.navigation a:hover,
+.navigation a:active {
+  color: #000;
+  background-color: #fff;
+}
+
+#hamburgerMenu {
+  display: block;
   font-size: 2rem;
   font-weight: 700;
   text-decoration: none;
   padding: 0.5rem 0.75rem;
-  color: #fff;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  border: none;
 }
 
-#hamburger::before {
+#hamburgerMenu::before {
   content: "≡";
 }
 
-#hamburger.show::before {
+.show li {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#hamburgerMenu.show::before {
   content: "X";
 }
 
@@ -173,6 +209,7 @@ nav a {
   border-radius: 5px;
   background-color: var(--Background-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
 }
 
 .main-border img {
@@ -225,7 +262,7 @@ nav a {
 }
 
 /*----HOME BUTTON----*/
-button {
+.home-button {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -238,7 +275,7 @@ button {
   border-radius: 5px;
 }
 
-button:hover {
+.home-button:hover {
   background-color: var(--Text-color);
   color: #000;
 }
@@ -269,6 +306,54 @@ button:hover {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+}
+
+/*----RATING STYLE SECTION----*/
+#rating-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#rating-form label {
+  margin: 0 5px;
+}
+
+#rateButton {
+  background-color: #000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  align-items: center;
+  display: block;
+  margin: 10px auto;
+  padding: 5px 15px;
+}
+
+#rateButton:hover {
+  background-color: var(--Text-color);
+  color: #000;
+}
+
+#reset-ratings {
+  background-color: #000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  align-items: center;
+  display: none;
+  margin: 10px auto;
+  padding: 5px 15px;
+}
+
+#reset-ratings:hover {
+  background-color: var(--Text-color);
+  color: #000;
 }
 
 /*----CONTACTS SECTION----*/

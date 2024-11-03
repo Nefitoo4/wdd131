@@ -27,26 +27,29 @@
       <p id="slogan">"Eating doesn't have to be so complicated"</p>
     </header>
     <div id="logo-menu" class="navbar">
-      <nav class="nav">
+      <a href="#" id="hamburgerMenu"></a>
+      <nav id="menu" class="nav">
         <img src="project/images/main-logo.svg" alt="logo" class="nav-logo" />
-        <a id="hamburger" href="#"></a>
-        <a href="#" id="home">Home</a>
-        <a href="#" id="purpose">Purpose</a>
-        <a href="#breakfast-ref" id="breakfast">BreakFast</a>
-        <a href="#lunch-ref" id="lunch">Lunch</a>
-        <a href="#dinner-ref" id="dinner">Dinner</a>
-        <a href="#f&aq" id="faq">FAQ</a>
-        <a href="#contact-us" id="contactUs">Contact Us</a>
+        <ul class="navigation">
+        <li><a href="#" id="home">Home</a></li>
+        <li><a href="#purpose" id="purpose">Purpose</a></li>
+        <li><a href="#breakfast-ref" id="breakfast">BreakFast</a></li>
+        <li><a href="#lunch-ref" id="lunch">Lunch</a></li>
+        <li><a href="#dinner-ref" id="dinner">Dinner</a></li>
+        <li><a href="#wireframes-ref" id="wreframes">Wireframes</a></li>
+        <li><a href="#f&aq" id="faq">FAQ</a></li>
+        <li><a href="#contact-us" id="contactUs">Contact Us</a></li>
+        </ul>
       </nav>
     </div>
     <main>
-      <button id="scrollToTop">Back to Home</button>
+      <button id="scrollToTop" class="home-button">Back to Home</button>
       <br />
       <br />
       <!------------------------------------------Purpose Section------------------------------------------------------->
       <div class="main-border">
         <div>
-          <h2>Purpose</h2>
+          <h2 id="purpose">Purpose</h2>
           <br />
           <br />
           <!--interline-->
@@ -61,7 +64,7 @@
       <br />
       <br />
       <!--------------------------------------------Breakfast Section------------------------------------------------>
-      <div class="main-border">
+      <div id="breakfast-section" class="main-border">
         <div>
           <h2 id="breakfast-ref">BreakFast</h2>
           <br />
@@ -92,7 +95,6 @@
             </figcaption>
           </figure>
         </div>
-      </div>
       <br />
       <br />
       <!------------------------------------------Breakfast Main Section End------------------------------------------------>
@@ -171,10 +173,11 @@
           </figure>
         </div>
       </div>
+      </div>
       <br />
       <br />
       <!------------------------------------------Lunch Section------------------------------------------------>
-      <div class="main-border">
+      <div id="lunch-section" class="main-border">
         <h2 id="lunch-ref">Lunch</h2>
         <br />
         <br />
@@ -199,7 +202,6 @@
             nutritious food.
           </figcaption>
         </figure>
-      </div>
       <br />
       <br />
       <!------------------------------------------Lunch End Section------------------------------------------------>
@@ -223,7 +225,7 @@
               lifes in any sense. This can be eaten even for lunch or dinner it
               doesn't matter however we recommend to eat for lunch because this
               provides a lot of energy and health. There are many kinds of
-              legumes some of them are; beans, peas, lentils, chickpeas, and
+              legumes some of them are; Beans, peas, lentils, chickpeas, and
               more. This food is easy to prepare and faster than other meals,
               whatever you choose as legume food is very recommended.
             </figcaption>
@@ -273,10 +275,11 @@
           </figure>
         </div>
       </div>
+      </div>
       <br />
       <br />
       <!------------------------------------------Dinner Section------------------------------------------------>
-      <div class="main-border">
+      <div id="dinner-section" class="main-border">
         <div>
           <h2 id="dinner-ref">Dinner</h2>
           <br />
@@ -302,7 +305,6 @@
             </figcaption>
           </figure>
         </div>
-      </div>
       <br />
       <br />
       <!------------------------------------------Dinner End Section------------------------------------------------>
@@ -325,7 +327,7 @@
               Salads are a healthy food and cheaper, salad ingredients are up to
               you there is no limit for creativity, however there are lots of
               salad models you can copy to eat delicious, one could be Caesar
-              Salad wich includes; chicken breast, fried bread, black olives,
+              Salad wich includes; Chicken breast, fried bread, black olives,
               eggs, parmesan cheese, and lemon juice.
             </figcaption>
           </figure>
@@ -376,88 +378,13 @@
           </figure>
         </div>
       </div>
-      <br />
-      <br />
-      <!------------------------------------------FAQ Section------------------------------------------------>
-      <section class="faqs">
-        <h2 id="f&aq">Frecuently and Asks questions</h2>
-        <br />
-        <br />
-        <!--interline-->
-        <div class="faq-container">
-          <div class="faq-item">
-            <h3 class="faq-question">
-              1. Am I going to really save money if I start with this diet?
-            </h3>
-            <p class="faq-answer">
-              Definitely yes, you are going to save money if you decide to
-              change your feeding. This page is not a training program and also
-              a professional direction of nutrition, this page only provide
-              ideas to start the way of austerity is up to you what would you
-              like to eat and how to save more money in a safety way but we
-              strongly recommend to follow these ideas to start a healthy and
-              economic life.
-            </p>
-          </div>
-          <div class="faq-item">
-            <h3 class="faq-question">
-              2. Can I cook these meals in any country of the world?
-            </h3>
-            <p class="faq-answer">
-              Definitely, all these meals were thought to find the ingredients
-              in any country in the world and these meals are easy to prepare
-              and cheap.
-            </p>
-          </div>
-          <div class="faq-item">
-            <h3 class="faq-question">
-              3. How money can I save by following the meals of this page?
-            </h3>
-            <p class="faq-answer">
-              There is no amount or percentage of the saving, this would depend
-              on how the inflation of the economy in each country, however there
-              is no doubt of a reduction in your expenses. In our calculation
-              have have an approximate of a 25% of savings however this is only
-              an approximation and depends on the economy of each country and
-              the value of each product.
-            </p>
-          </div>
-          <div class="faq-item">
-            <h3 class="faq-question">
-              4. Can a diabetic or renal failure patient follow the meals
-              recipe?
-            </h3>
-            <p class="faq-answer">
-              Before following the recipe meals of this page and you are a
-              patient of these or other disease please consult with you doctor.
-            </p>
-          </div>
-          <div class="faq-item">
-            <h3 class="faq-question">
-              5. Are the meals recommendations coming from a health
-              professional, doctor or nutritionist?
-            </h3>
-            <p class="faq-answer">
-              No, this page was built from people who like care their health and
-              economy and the meals recommendations source coming from different
-              project investigations.
-            </p>
-          </div>
-          <div class="faq-item">
-            <h3 class="faq-question">
-              6. Is this an ONG page, any politic movement or community?
-            </h3>
-            <p class="faq-answer">
-              No, the page was built for fans of health and economy wellness or
-              any other beneficial contribution that this can bring.
-            </p>
-          </div>
-        </div>
-      </section>
-      <div class="container">
-        <h3>Wireframes</h3>
-        <br />
-        <br />
+    </div>
+    <br />
+    <br />
+                <!------------------------------------------Wireframes------------------------------------------>
+    <div class="container">
+      <h3 id="wireframes-ref">Wireframes</h3>
+      <br>
         <div class="wireframes-button">
         <a href="project/wireframes/Mobile View.drawio.png" class="button">Mobile View</a>
         <a href="project/wireframes/Wider View.drawio.png" class="button">Wider View</a>
@@ -465,6 +392,110 @@
       </div>
       <br />
       <br />
+            <!------------------------------------------Rating------------------------------------------------>
+      <div id="rating-container">
+        <h2>Rate This Page</h2>
+        <form id="rating-form">
+          <label>
+            <input type="radio" name="rating" value="1">1
+          </label>
+          <label>
+            <input type="radio" name="rating" value="2">2
+          </label>
+          <label>
+            <input type="radio" name="rating" value="3">3
+          </label>
+          <label>
+            <input type="radio" name="rating" value="4">4
+          </label>
+          <label>
+            <input type="radio" name="rating" value="5">5
+          </label>
+          <button id="rateButton" type="submit">Submit Rating</button>
+          <button id="reset-ratings">Reset</button>
+        </form>
+        <p>Total Ratings: <span id="rating-count">0</span></p>
+        <p>Average rating: <span id="average-rating">0</span></p>
+      </div>
+      <br><br>
+            <!------------------------------------------FAQ Section------------------------------------------------>
+            <section class="faqs">
+              <h2 id="f&aq">Frecuently and Asks questions</h2>
+              <br />
+              <br />
+              <!--interline-->
+              <div class="faq-container">
+                <div class="faq-item">
+                  <h3 class="faq-question">
+                    1. Am I going to really save money if I start with this diet?
+                  </h3>
+                  <p class="faq-answer">
+                    Definitely yes, you are going to save money if you decide to
+                    change your feeding. This page is not a training program and also
+                    a professional direction of nutrition, this page only provide
+                    ideas to start the way of austerity is up to you what would you
+                    like to eat and how to save more money in a safety way but we
+                    strongly recommend to follow these ideas to start a healthy and
+                    economic life.
+                  </p>
+                </div>
+                <div class="faq-item">
+                  <h3 class="faq-question">
+                    2. Can I cook these meals in any country of the world?
+                  </h3>
+                  <p class="faq-answer">
+                    Definitely, all these meals were thought to find the ingredients
+                    in any country in the world and these meals are easy to prepare
+                    and cheap.
+                  </p>
+                </div>
+                <div class="faq-item">
+                  <h3 class="faq-question">
+                    3. How money can I save by following the meals of this page?
+                  </h3>
+                  <p class="faq-answer">
+                    There is no amount or percentage of the saving, this would depend
+                    on how the inflation of the economy in each country, however there
+                    is no doubt of a reduction in your expenses. In our calculation
+                    have have an approximate of a 25% of savings however this is only
+                    an approximation and depends on the economy of each country and
+                    the value of each product.
+                  </p>
+                </div>
+                <div class="faq-item">
+                  <h3 class="faq-question">
+                    4. Can a diabetic or renal failure patient follow the meals
+                    recipe?
+                  </h3>
+                  <p class="faq-answer">
+                    Before following the recipe meals of this page and you are a
+                    patient of these or other disease please consult with you doctor.
+                  </p>
+                </div>
+                <div class="faq-item">
+                  <h3 class="faq-question">
+                    5. Are the meals recommendations coming from a health
+                    professional, doctor or nutritionist?
+                  </h3>
+                  <p class="faq-answer">
+                    No, this page was built from people who like care their health and
+                    economy and the meals recommendations source coming from different
+                    project investigations.
+                  </p>
+                </div>
+                <div class="faq-item">
+                  <h3 class="faq-question">
+                    6. Is this an ONG page, any politic movement or community?
+                  </h3>
+                  <p class="faq-answer">
+                    No, the page was built for fans of health and economy wellness or
+                    any other beneficial contribution that this can bring.
+                  </p>
+                </div>
+              </div>
+            </section>
+              <br />
+              <br />      
       <!------------------------------------------Contact Us and Social Media Section------------------------------------------------>
       <div class="contact-section">
         <div id="contact-us">
