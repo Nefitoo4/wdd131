@@ -92,86 +92,54 @@ figcaption {
 }
 
 /*----NAVIGATION MENU----*/
-.navbar {
-  background-color: #000;
-  text-align: center;
-  position: relative;
-}
-
-.navbar nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .nav-logo {
-  height: 40px;
-  margin-left: 20px;
+  display: none;
+}
+
+#menu {
+  font-size: 2rem;
+  padding: 0.5rem;
+  border: 0;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  float: right;
+  bottom: 1.5rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "⨉";
+}
+
+nav {
+  font-family: var(--secondary-font);
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: var(--Text-color);
+  margin: 0;
 }
 
 nav a {
+  display: none;
+  padding: 1.5rem;
+  text-align: center;
+  text-decoration: none;
   color: #fff;
-  padding: 2rem;
-  text-decoration: none;
-  text-align: center;
-  display: flex;
-  text-align: center;
-  font-weight: 400;
+  margin: 0;
 }
 
-.nav a:hover {
-  background-color: var(--Text-color);
-  color: #000;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav li {
-  float: inline-start;
-  list-style-type: none;
-}
-
-.navigation li {
-  display: flex;
-}
-
-nav li a:hover {
+nav a:hover {
   background-color: var(--secondary-color);
-}
-
-.navigation a:hover,
-.navigation a:active {
   color: #000;
-  background-color: #fff;
 }
 
-#hamburgerMenu {
+.open a {
   display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  text-decoration: none;
-  padding: 0.5rem 0.75rem;
-  background-color: #000;
-  color: white;
-  cursor: pointer;
-  border: none;
-}
-
-#hamburgerMenu::before {
-  content: "≡";
-}
-
-.show li {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#hamburgerMenu.show::before {
-  content: "X";
 }
 
 /*----FLEX IMAGE SECTION----*/

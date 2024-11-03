@@ -1,12 +1,14 @@
 /*----HAMBURGER MENU----*/
 document.addEventListener("DOMContentLoaded", () => {
-  const hambutton = document.querySelector("#hamburgerMenu");
-  const menu = document.querySelector("#menu");
+  const hambutton = document.querySelector("#menu");
+  const navigation = document.querySelector("nav");
+  const logo = document.querySelector(".nav-logo");
   //Click Event Listener to the hamburger button and use a callback function that toggles the list
   //element's list of classes.
   hambutton.addEventListener("click", () => {
-    menu.classList.toggle("show");
-    hambutton.classList.toggle("show");
+    navigation.classList.toggle("open");
+    hambutton.classList.toggle("open");
+    logo.classList.toggle("open");
   });
 });
 

@@ -1,35 +1,43 @@
 /*////////////////////////////////////////PAGE STYLES///////////////////////////////////////////////*/
-/*------Styles for smaller screens------*/
-@media screen and (max-width: 639px) {
-  .navbar nav {
-    flex-direction: column;
-    align-items: flex-start;
+@media only screen and (min-width: 768px) {
+  #menu {
+    display: none;
+  }
+
+  nav {
+    grid-column: 3 / 5;
+    margin-right: 8px;
+    flex-direction: row;
+  }
+
+  nav a {
+    display: block;
+    flex: 1 1 100%;
   }
 
   .nav-logo {
-    margin-bottom: 10px;
-    margin-left: 0;
+    display: block;
   }
 
   .border-section {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .faq-container {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .contact-section {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   #contact-us,
   #social-media-links {
-    flex: 1 1 100%;
-    max-width: 100%; /*expanded to 100%*/
-    align-items: flex-start;
+    flex: 1 1 45%;
+    max-width: 45%;
   }
 
   .button {
@@ -58,121 +66,5 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-  }
-}
-
-/*-----Styles for medium screens-----*/
-@media screen and (min-width: 640px) and (max-width: 1024px) {
-  .navbar nav {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .nav-logo {
-    margin-left: 20px;
-  }
-
-  .border-section {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .faq-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .contact-section {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  #contact-us,
-  #social-media-links {
-    flex: 1 1 45%;
-    max-width: 45%;
-  }
-}
-
-/*-----Styles for bigger screens-----*/
-@media screen and (min-width: 1025px) {
-  .navbar nav {
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
-  .nav-logo {
-    margin-left: 20px;
-  }
-
-  .border-section {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .faq-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .contact-section {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  #contact-us,
-  #social-media-links {
-    flex: 1 1 45%;
-    max-width: 45%;
-  }
-}
-
-/*-----Styles for for small screens for hamburger menu-----*/
-@media only screen and (max-width: 768px) {
-  .nav {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav a {
-    width: 100%;
-    padding: 10px 20px;
-  }
-
-  .nav.active {
-    display: flex;
-  }
-
-  #hamburgerMenu {
-    display: block;
-  }
-
-  #menu {
-    display: none;
-  }
-
-  #menu.show {
-    display: block;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navigation li {
-    display: block;
-  }
-
-  #hamburgerMenu {
-    display: block;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .navigation {
-    display: flex;
-  }
-
-  #hamburgerMenu {
-    display: none;
   }
 }
